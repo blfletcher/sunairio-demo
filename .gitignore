@@ -3,5 +3,5 @@ dist
 stats.json
 .DS_Store
 package-lock.json
-# jetbrains
-.idea
+.env.development
+.env.production

@@ -1,21 +1,16 @@
 {
   "author": {
-    "name": "Stefan Wüthrich",
-    "url": "https://altafino.com"
+    "name": "Benjamin Fletcher"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "webpack",
-    "boilerplate",
-    "tailwind"
-  ],
-  "license": "MIT",
-  "name": "react-webpack-5-tailwind-2",
+  "name": "sunairio-demo",
   "version": "1.0.1",
-  "description": "Webpack 6 boilerplate with React 17, Tailwind 2, using babel, sass, with HMR and an optimized production build",
+  "description": "A frontend demo for Sunairio",
   "dependencies": {
+    "c3": "^0.7.20",
+    "fecha": "^4.2.3",
+    "google-map-react": "^2.1.10",
     "react": "^17.0.2",
+    "react-c3-component": "^2.0.0",
     "react-dom": "^17.0.2",
     "tailwindcss": "^2.2.7"
   },
@@ -24,7 +19,6 @@
     "test": "jest",
     "start": "webpack serve --config config/webpack.dev.js",
     "build": "NODE_ENV=production webpack --config config/webpack.prod.js",
-    "build-staging": "NODE_ENV=production webpack --config config/webpack.stag.js",
     "prettify": "yarn prettier \"**/*.*(js|jsx)\" --ignore-path=.prettierignore --write",
     "lint": "eslint src --ext .js,.jsx && yarn prettify",
     "lint-fix": "eslint src --ext .js,.jsx --fix && yarn prettify",
